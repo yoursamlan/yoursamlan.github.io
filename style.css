@@ -170,6 +170,11 @@ html {
 	letter-spacing: 6px;
 }
 
+#subtitle a{
+	text-decoration: none;
+	color: #d8d8d8;
+}
+
 #subtitle span {
 	color: #d8d8d8;
 	animation-duration: 6s;
