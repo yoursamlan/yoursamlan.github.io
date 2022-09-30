@@ -1,0 +1,36 @@
+<html>
+
+<head>
+	<title>Amlan Saha Kundu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0, user-scalable=0">
+</head>
+
+<body>
+	<iframe src="./new/index.html" frameborder="none" height="100%" width="100%" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0;"></iframe>
+	<script>
+		document.onkeydown = function(e) {
+			if (event.keyCode == 123) {
+				return false;
+			}
+			if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+				return false;
+			}
+			if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+				return false;
+			}
+			if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+				return false;
+			}
+			if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+				return false;
+			}
+		}
+
+		document.addEventListener('contextmenu', function(e) {
+			e.preventDefault();
+		});
+
+	</script>
+</body>
+
+</html>
