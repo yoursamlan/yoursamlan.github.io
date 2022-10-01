@@ -5,6 +5,7 @@ src: url("./../icon-fonts/signeton/Signeton.woff") format("woff"),
 url("./../icon-fonts/signeton/Signeton.otf") format("opentype"),
 }
 
+
 span>data-text2{
     font-family: "Signeton" !important;
 }

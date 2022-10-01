@@ -39,7 +39,7 @@
 /*------------------------ 1 Body and Core Css ------------------------*/		
 
 body{
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Libre Baskerville', sans-serif;
 }
 
 html{
@@ -47,10 +47,10 @@ html{
 }
 
 p{
-    font-size: 12.5px;
+    font-size: 17.5px;
     color: #999999;
-    line-height: 24px;
-    font-family: 'Montserrat', sans-serif;
+    line-height: 30px;
+    font-family: 'Libre Baskerville', sans-serif;
  }
 
 ::selection {
@@ -148,7 +148,7 @@ nav{
 nav ul li{
     float: left;
     list-style: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Libre Baskerville', sans-serif;
     font-size: 14px;
     position: relative;
     margin-right: 3px;
@@ -267,7 +267,7 @@ input:-webkit-autofill {
 }
 
 .page-title h1{
-   font-size: 75px;
+   font-size: 60px;
    color: #fff;
    font-weight: bold;
    letter-spacing: -3px;
@@ -309,9 +309,9 @@ article{
 
 .center-title h1{
     text-align: center;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 600; 
-    margin: 20px 0 10px 0;
+    margin: 20px 0 20px 0;
 }
 
 .center-title:before{
@@ -334,9 +334,9 @@ article{
 
 .left-title h1{
     text-align:left;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 600;   
-    margin: 20px 0 10px 0;
+    margin: 20px 0 20px 0;
 }
 
 .left-title:before{
@@ -2409,6 +2409,8 @@ a.giggs_button2{
 
 
     
-
+#ttxt{
+    font-family: "Signeton";
+}
 
 
