@@ -2328,9 +2328,9 @@ a.giggs_button2{
 	width: 0%;
 }
     
-    .selected:after{
+    /*.selected:after{
         display: none;
-    }
+    }*/
 
     .skill-list:first-child{
         margin-bottom: 70px;
@@ -2413,4 +2413,6 @@ a.giggs_button2{
     font-family: "Signeton";
 }
 
-
+#mobNav{
+    color: #000;
+}
