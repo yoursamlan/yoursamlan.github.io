@@ -10,4 +10,8 @@ span>data-text2{
     font-family: "Signeton" !important;
 }
 
- 
+ .name{
+    font-family: "Signeton" !important;
+    color: royalblue;
+    font-weight: 600;
+ }
