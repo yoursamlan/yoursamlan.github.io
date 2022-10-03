@@ -2248,7 +2248,7 @@ a.giggs_button2{
 @media screen and (max-width: 991px) {
 
     .home-content h1{
-        font-size: 50px;
+        font-size: 45px;
     } 
     
      .what-can .feature{
@@ -2286,7 +2286,7 @@ a.giggs_button2{
 @media screen  and (max-width: 768px) {
 
     .home-content h1{
-        font-size: 32px !important;
+        font-size: 24px !important;
         margin-bottom: 10px;
     }
     
