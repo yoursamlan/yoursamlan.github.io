@@ -313,7 +313,7 @@ article{
     text-align: center;
     font-size: 24px;
     font-weight: 600; 
-    margin: 20px 0 20px 0;
+    margin: 20px 0 40px 0;
 }
 
 .center-title:before{
@@ -338,7 +338,7 @@ article{
     text-align:left;
     font-size: 24px;
     font-weight: 600;   
-    margin: 20px 0 20px 0;
+    margin: 20px 0 40px 0;
 }
 
 .left-title:before{
