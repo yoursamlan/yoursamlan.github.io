@@ -2271,6 +2271,10 @@ a.giggs_button2{
         margin: 10px 0;
         color: #000;
     }
+
+    p{
+        text-align: justify;
+    }
     
 }
 
