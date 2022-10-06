@@ -948,13 +948,17 @@ article{
 }
 
 .portfolio_filter ul li {
-    font-size: 12.5px;
+    font-size: 15px;
     color: var(--col3);
     line-height: 24px;
     float: left;
     margin-right: 15px;
     list-style: none;
     cursor: pointer;
+    padding: 5px 10px;
+    border: solid 1px var(--col3);
+    text-transform: uppercase ;
+    border-radius: 50px;
 }
 
 .isotope_items{
@@ -2341,7 +2345,7 @@ a.giggs_button2{
     }
     
     .portfolio_filter ul {
-       margin-top: 15px;
+       margin: 15px auto;
     }
     
     .portfolio_filter ul li {
