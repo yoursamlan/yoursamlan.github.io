@@ -37,6 +37,8 @@ body{
 
 html{
 	height: 100%;
+    --top-spacing: 80px;
+    scroll-padding-top: var(--top-spacing);
 }
 
 p{
