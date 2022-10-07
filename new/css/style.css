@@ -145,7 +145,7 @@ nav ul li{
     float: left;
     list-style: none;
     font-family: 'Montserrat','Libre Baskerville', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     position: relative;
     margin-right: 3px;
 }
@@ -155,9 +155,10 @@ nav ul li a{
     line-height: 72px;
     display: block;
     text-decoration: none !important;
-    font-size: 13px;
-    padding: 0 7px;
+    font-size: 15px;
+    padding: 0 10px;
     font-weight: 500;
+    letter-spacing: 1.5px;
     
 }
 
@@ -308,7 +309,8 @@ article{
     text-align: center;
     font-size: 24px;
     font-weight: 600; 
-    margin: 20px 0 40px 0;
+    margin: 40px 0 40px 0;
+    text-transform: uppercase;
 }
 
 .center-title:before{
@@ -333,7 +335,8 @@ article{
     text-align:left;
     font-size: 24px;
     font-weight: 600;   
-    margin: 20px 0 40px 0;
+    margin: 40px 0 40px 0;
+    text-transform: uppercase;
 }
 
 .left-title:before{
