@@ -62,7 +62,7 @@
     <section class="about line-bg" id=about>
         <div class=container>
             <div class="row fadeInUp wow" data-wow-delay=0.4s>
-                <div class="col-md-4 profile" id=dp><img src=images/profile.png alt=""></div>
+                <div class="col-md-4 profile"><img src=images/profile.jpg alt="" id="dp"></div>
                 <div class="col-md-8 about-info top_30">
                     <div class=left-title>
                         <h1>Who am I ?</h1>
@@ -144,7 +144,7 @@
                     </div>
                 </div>
             </div>
-            <div class="fadeInUp wow col-md-12 skills top_60" data-wow-delay=0.2s>
+            <div class="fadeInUp wow col-md-12 skills top_60 roundDiv" data-wow-delay=0.2s>
                 <ul class="col-md-6 skill-list top30">
                     <li>
                         <h3>Web Development</h3>
@@ -196,7 +196,7 @@
         <div class=container>
             <div class=row>
                 <div class="fadeInUp wow center-title" data-wow-delay=0.2s>
-                    <h1>Some of my works</h1>
+                    <h1>A few of my works</h1>
                 </div>
                 <div class="col-md-12 col-sm-12 col-xs-12 top_30">
                     <div class="row isotope_items">
@@ -284,15 +284,15 @@
                             </div>
                         </div>
                         <form action='/pages/success/' method='POST' name='contact' onSubmit='submit'
-                        class="col-md-8 col-md-offset-2 contact-form top_60"  data-netlify="true">
+                        class="col-md-8 col-md-offset-2 contact-form top_60 roundDiv"  data-netlify="true">
                         <input style="visibility: hidden;" name="bot-field">
                             <div class=row>
                                 <div class=col-md-6><input name="name" id="name" type="text" class="form-input"
                                             placeholder="Your name..." required="required"></div>
-                                <div class=col-md-6><input name="email" id="email" type="email" class="form-input"
+                                <div class="col-md-6 roundDiv" ><input name="email" id="email" type="email" class="form-input"
                                     placeholder="Your email..." required="required">
                                 </div>
-                                <div class=col-md-12><textarea class="requie form-text" id=con_message
+                                <div class="col-md-12 roundDiv"><textarea class="requie form-text" id=con_message
                                         placeholder=Message rows=8></textarea></div>
                                         <input class=giggs_button2
                                         type="submit" id="submit" name="send" value="SEND A MESSAGE">
