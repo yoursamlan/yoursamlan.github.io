@@ -250,6 +250,7 @@ input:-webkit-autofill {
     border: 2px solid red;
 }
 
+
 .content {
     margin-top: 60px;
 }
@@ -258,6 +259,7 @@ input:-webkit-autofill {
     display: block !important;
     position: relative;
 }
+
 
 .page-title {
     display: table-cell;
@@ -1412,7 +1414,7 @@ article {
     padding: 10px;
     border: solid 1px var(--col4);
     border-radius: 3px;
-    font-size: 13px;
+    font-size: 18px;
     margin-bottom: 30px;
 }
 
