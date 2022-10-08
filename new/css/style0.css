@@ -2312,7 +2312,7 @@ blockquote {
     border-radius: 50px;
     color: var(--col7);
     font-weight: 500;
-    font-size: 13px;
+    font-size: 16px;
     transition: all ease 0.3s;
     display: inline-block;
     cursor: pointer;
