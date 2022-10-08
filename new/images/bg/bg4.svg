@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;background:#000;display:block;z-index:1;position:relative" width="1920" height="1080" preserveAspectRatio="xMidYMid" viewBox="0 0 1920 1080">
 	<g transform="translate(960,540) scale(1,1) translate(-960,-540)">
 		<linearGradient id="lg-0.0005728506581863524" x1="0" x2="1" y1="0" y2="0">
-			<stop stop-color="#ed2e38" offset="0"></stop>
+			<stop stop-color="#967bb6" offset="0"></stop>
 			<stop stop-color="#000" offset="1"></stop>
 		</linearGradient>
 		<path d="M 1475 540 C 1475 622 1426 776 1378 843 C 1330 910 1150 861 1072 886 C 994 911 910 958 832 933 C 754 908 614 893 566 827 C 518 761 371 622 371 540 C 371 458 484 295 532 229 C 580 163 755 175 833 150 C 911 125 996 164 1074 189 C 1152 214 1313 182 1361 249 C 1409 316 1475 458 1475 540" fill="url(#lg-0.0005728506581863524)" opacity="0.43000000000000005">

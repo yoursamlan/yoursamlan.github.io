@@ -7,9 +7,8 @@
     --col5: #dddddd;
     --col6: #eeeeee;
     --col7: #ffffff;
-    --bg0: #73c2ff;
-    --bg1: #2355ff;
-    --bg2: #ff0000;
+    --accCol: #3957b7;
+    --bgX:url('./../images/bg/bg0.svg');
 }
 
 
@@ -641,7 +640,7 @@ article {
 /*------------------------ 2 Home ------------------------*/
 
 .home {
-    background-image: url(./../images/bg/bg2.svg);
+    background-image: var(--bgX);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2043,7 +2042,7 @@ header .right-menu {
 
 
 .page-cover {
-    background: url(../images/bg/bg2.svg) no-repeat fixed bottom / cover;
+    background: var(--bgX) no-repeat fixed bottom / cover;
     height: 370px;
     padding-top: 190px;
 }

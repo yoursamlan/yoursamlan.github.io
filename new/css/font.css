@@ -12,7 +12,7 @@ span>data-text2{
 
  .name{
     font-family: "Signeton" !important;
-    color: royalblue;
+    color: var(--accCol);
     font-weight: 600;
  }
 
@@ -29,5 +29,5 @@ span>data-text2{
  }
 
  .feat2{
-    color: royalblue;
+    color: var(--accCol);
  }
