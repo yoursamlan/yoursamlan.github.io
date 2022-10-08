@@ -16,12 +16,10 @@ span>data-text2{
     font-weight: 600;
  }
 
-.btnTxt{
-    font-size: 16px;
-    padding: 0 5px;
-    font-family: 'Montserrat','Libre Baskerville', sans-serif;
-    color: var(--col7);
- }
+.btnicon{
+    font-size: 16px !important;
+    padding-left: 8px;
+}
  .arrow{
     font-size: 20px;
     padding-left: 16px;
