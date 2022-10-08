@@ -230,7 +230,7 @@ $('.widget-twitter .tweet').twittie({
 
 
 
-/* Contact Form JS*/
+/* Contact Form JS
 (function ($) {
     'use strict';
     if ($('.contact-form').length) {
@@ -281,3 +281,4 @@ $('.widget-twitter .tweet').twittie({
         });
     }
 })(jQuery);
+*/
