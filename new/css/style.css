@@ -44,7 +44,7 @@ html {
 }
 
 p {
-    font-size: 16px;
+    font-size: 18px;
     color: var(--col2);
     line-height: 30px;
     font-family: 'Montserrat', 'Libre Baskerville', sans-serif;
@@ -157,7 +157,7 @@ nav ul li a {
     line-height: 72px;
     display: block;
     text-decoration: none !important;
-    font-size: 15px;
+    font-size: 16px;
     padding: 0 10px;
     font-weight: 500;
     letter-spacing: 1.5px;
@@ -368,7 +368,7 @@ article {
 
 .giggs-list {
     color: var(--col3);
-    font-size: 12.5px;
+    font-size: 16px;
     list-style: none;
     padding: 0;
 }
@@ -888,7 +888,7 @@ article {
 }
 
 .feature span {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: 1px;
     margin-bottom: 10px;
@@ -939,7 +939,7 @@ article {
 }
 
 .skill-list h3 {
-    font-size: 13px;
+    font-size: 16px;
     letter-spacing: 1px;
 }
 
@@ -2363,7 +2363,7 @@ blockquote {
     border-radius: 50px;
     color: var(--col7);
     font-weight: 500;
-    font-size: 13px;
+    font-size: 16px;
     transition: all ease 0.3s;
     display: inline-block;
     cursor: pointer;
