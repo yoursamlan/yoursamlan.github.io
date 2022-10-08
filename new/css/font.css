@@ -20,7 +20,7 @@ span>data-text2{
     font-size: 16px;
     padding: 0 5px;
     font-family: 'Montserrat','Libre Baskerville', sans-serif;
-    color: azure;
+    color: var(--col7);
  }
  .arrow{
     font-size: 20px;
