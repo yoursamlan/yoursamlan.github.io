@@ -282,7 +282,8 @@ body.dark  {
     }
     
     .selected{
-        color: #ff423a !important;
+        background-color: var(--accCol) !important;
+        color: white !important;
     }
     
     .dark .nav-menu {
