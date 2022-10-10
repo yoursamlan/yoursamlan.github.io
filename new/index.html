@@ -352,8 +352,8 @@
                             </div>
                         </div-->
                         <form action='/pages/success.html' method='POST' name='contact' onSubmit='submit'
-                            class="col-md-8 col-md-offset-2 contact-form top_60 roundDiv" data-netlify="true">
-                            <!--input style="visibility: hidden;" name="bot-field"-->
+                            class="col-md-8 col-md-offset-2 contact-form top_60 roundDiv" netlify-honeypot="bot-field" data-netlify="true">
+                            <input style="visibility: hidden;height: 0px;" name="bot-field">
                             <div class=row>
                                 <div class=col-md-6><input name="name" id="name" type="text" class="form-input"
                                         placeholder="Your name..." required="required"></div>
