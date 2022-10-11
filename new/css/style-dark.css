@@ -284,6 +284,7 @@ body.dark  {
     .selected{
         background-color: var(--accCol) !important;
         color: white !important;
+        /*border-radius: 20px;*/
     }
     
     .dark .nav-menu {
