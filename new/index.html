@@ -21,15 +21,14 @@
     <link href=icon-fonts/essential-regular-fonts/essential-icons.css rel=stylesheet>
     <link href="https://fonts.googleapis.com/css?family=Libre Baskerville" rel=stylesheet>
     <script>
-        function randInt(min, max) {
-            return Math.floor(Math.random() * (max - min + 1) + min)
+        function randInt(r, t) {
+            return Math.floor(Math.random() * (t - r + 1) + r)
         }
-        var x = randInt(1, 5);
-        var colorPalet = ['#3957b7', '#73c2ff', '#ed2e38', '#46995B', '#EBA937', '#C8A2C8','#967bb6']
-        var p = 'url("./../images/bg/bg' + x + '.svg")';
-        var r = document.querySelector(':root');
-        r.style.setProperty('--bgX', p);
-        r.style.setProperty('--accCol', colorPalet[x]);
+        var x = randInt(1, 5),
+            colorPalet = ["#3957b7", "#73c2ff", "#ed2e38", "#46995B", "#EBA937", "#C8A2C8", "#967bb6"],
+            p = 'url("./../images/bg/bg' + x + '.svg")',
+            r = document.querySelector(":root");
+        r.style.setProperty("--bgX", p), r.style.setProperty("--accCol", colorPalet[x])
     </script>
     <div id=preloader>
         <div class=spinner>
@@ -73,30 +72,30 @@
     <section class="about line-bg" id=about>
         <div class=container>
             <div class="row fadeInUp wow" data-wow-delay=0.4s>
-                <div class="col-md-4 profile"><img src=images/profile.jpg alt="" id="dp"></div>
+                <div class="col-md-4 profile"><img src=images/profile.jpg alt="" id=dp></div>
                 <div class="col-md-8 about-info top_30">
                     <div class=left-title>
                         <h1>Who am I ?</h1>
                     </div>
-                    <p>Hey there!<p>    My Name is &nbsp;&nbsp;<span class=name>Amlan.</span>&nbsp;&nbsp; In Bengali, it
-                            refers to <i>someone
-                                who always smiles</i>. Believe me or not, I fit that description perfectly :)<p>
+                    <p>Hey there!<p>    My Name is   <span class=name>Amlan.</span>   In Bengali, it refers to
+                            <i>someone who always smiles</i>. Believe me or not, I fit that description perfectly :)<p>
                                     Anyway, let me tell you my story. I originally wanted to be a mathematician, so I
                                 went to one of the 162-year-old prestigious colleges in India to become just that. A few
                                 things led to another, and I have become a designer who also codes without ever planning
                                 to become one of them.<p>    In addition to designing graphics, UI/UX, etc., and
-                                    creating beautiful
-                                    websites, I enjoy taking pictures, playing chess, and automating monotonous tasks
-                                    with Python. So, feel free to <a href=https://lichess.org/@/Sicilian3999
-                                        target=_blank>challenge me</a> on the 64 squares if you get bored. And hey,
-                                    don't forget to share your thoughts after checking out my works, especially my
-                                    photography :)<p>Thank you, cheers!!</p><button class="giggs_button top_15"
-                                        onclick='window.open("https://photoamlan.ml","_blank")'><span>MY PHOTOGRAPHY <i class="icon btnicon" data-icon=g></i></span></button>
+                                    creating beautiful websites, I enjoy taking pictures, playing chess, and automating
+                                    monotonous tasks with Python. So, feel free to <a
+                                        href=https://lichess.org/@/Sicilian3999 target=_blank>challenge me</a> on the 64
+                                    squares if you get bored. And hey, don't forget to share your thoughts after
+                                    checking out my works, especially my photography :)<p>Thank you, cheers!!</p><button
+                                        class="giggs_button top_15"
+                                        onclick='window.open("https://photoamlan.ml","_blank")'><span>MY PHOTOGRAPHY <i
+                                                class="icon btnicon" data-icon=g></i></span></button>
                 </div>
             </div>
         </div>
     </section>
-    <section class="fadeInUp wow my_features" id=skills data-wow-delay=0.6s>
+    <section class="my_features fadeInUp wow" id=skills data-wow-delay=0.6s>
         <div class=container>
             <div class=left-title>
                 <h1>What do I offer ?</h1>
@@ -129,7 +128,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-12 feature">
                     <div class=row>
                         <div class=feat-icon><i class=icon data-icon=Z></i></div>
-                        <div class="feat-text"><span>PHOTO EDITING</span>
+                        <div class=feat-text><span>PHOTO EDITING</span>
                             <p>If you would like your photos professionally retouched or manipulated, please feel free
                                 to ask.
                         </div>
@@ -138,7 +137,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-12 feature">
                     <div class=row>
                         <div class=feat-icon><i class=icon data-icon=4></i></div>
-                        <div class="feat-text"><span>WEB SCRAPPING</span>
+                        <div class=feat-text><span>WEB SCRAPPING</span>
                             <p>Many times, I have been called upon to rescue those who wish to scrape tons of data from
                                 websites that do not provide APIs.
                         </div>
@@ -147,14 +146,14 @@
                 <div class="col-md-4 col-sm-6 col-xs-12 feature">
                     <div class=row>
                         <div class=feat-icon><i class=icon data-icon=#></i></div>
-                        <div class="feat-text"><span>AUTOMATION</span>
+                        <div class=feat-text><span>AUTOMATION</span>
                             <p>As a final note, I am always available to assist you when you wish to automate monotonous
                                 tasks using Python.
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="fadeInUp wow col-md-12 skills top_60 roundDiv" data-wow-delay=0.2s>
+            <div class="roundDiv fadeInUp wow col-md-12 skills top_60" data-wow-delay=0.2s>
                 <ul class="col-md-6 skill-list top30">
                     <li>
                         <h3>Web Development</h3>
@@ -205,26 +204,23 @@
     <section class="dotted-bg portfolio" id=portfolio>
         <div class=container>
             <div class=row>
-                <div class="fadeInUp wow center-title" data-wow-delay=0.2s>
+                <div class="center-title fadeInUp wow" data-wow-delay=0.2s>
                     <h1>My works</h1>
                 </div>
                 <div class="col-md-12 col-sm-12 col-xs-12 top_30">
                     <div class="row isotope_items">
-                        <div class="single_item link application col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="work-inner">
-                                <div class="work-overlay">
-                                    <div class="overlay-in">
-                                        <div class="work-info">
-                                            <p>App Concept - Sunday Suspense</p>
-                                            <div class="work-links">
-                                                <!--a href="work-single.html" class="link"><i
-                                                        data-icon="5" class="icon"></i></a--><a
-                                                    href="images/portfolio/UI/sunsus.gif"
-                                                    class="image-link lightbox"><i data-icon="W" class="icon"></i></a>
-                                            </div>
+                        <div class="col-md-4 col-sm-6 fadeInUp link single_item wow application" data-wow-delay=0.3s>
+                            <div class=work-inner>
+                                <div class=work-overlay>
+                                    <div class=overlay-in>
+                                        <div class=work-info>
+                                            <p>App Concept - Sunday Suspense<div class=work-links><a
+                                                        href=images/portfolio/UI/sunsus.gif
+                                                        class="image-link lightbox"><i class=icon data-icon=W></i></a>
+                                                </div>
                                         </div>
                                     </div>
-                                </div><img class="thumbnail" src="images/portfolio/UI/sunsus.gif" alt="">
+                                </div><img src=images/portfolio/UI/sunsus.gif alt="" class=thumbnail>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6 fadeInUp link single_item wow graphics" data-wow-delay=0.2s>
@@ -238,106 +234,91 @@
                                                 </div>
                                         </div>
                                     </div>
-                                </div><img class="thumbnail" src=images/portfolio/LOGO/Logo-Amlan-Classic.webp alt="">
+                                </div><img src=images/portfolio/LOGO/Logo-Amlan-Classic.webp alt="" class=thumbnail>
                             </div>
                         </div>
-
-
-                        <div class="single_item link graphics col-md-4 col-sm-6 wow fadeInUp roundDiv"
-                            data-wow-delay="0.4s">
-                            <div class="work-inner">
-                                <div class="work-overlay">
-                                    <div class="overlay-in">
-                                        <div class="work-info">
-                                            <p>Logo Design - Gulmohar</p>
-                                            <div class="work-links">
-                                                <!--a href="work-single.html" class="link"><i
-                                                data-icon="5" class="icon"></i></a--><a
-                                                    href="images/portfolio/LOGO/Gulmohar.png"
-                                                    class="image-link lightbox"><i data-icon="W" class="icon"></i></a>
-                                            </div>
+                        <div class="col-md-4 col-sm-6 fadeInUp link single_item wow graphics roundDiv"
+                            data-wow-delay=0.4s>
+                            <div class=work-inner>
+                                <div class=work-overlay>
+                                    <div class=overlay-in>
+                                        <div class=work-info>
+                                            <p>Logo Design - Gulmohar<div class=work-links><a
+                                                        href=images/portfolio/LOGO/Gulmohar.png
+                                                        class="image-link lightbox"><i class=icon data-icon=W></i></a>
+                                                </div>
                                         </div>
                                     </div>
-                                </div><img class="thumbnail" src="images/portfolio/LOGO/Gulmohar.webp" alt="">
+                                </div><img src=images/portfolio/LOGO/Gulmohar.webp alt="" class=thumbnail>
                             </div>
                         </div>
-
-
-
                         <div class="col-sm-6 fadeInUp link single_item wow col-md-8 web-design" data-wow-delay=0.3s>
                             <div class=work-inner>
                                 <div class=work-overlay>
                                     <div class=overlay-in>
                                         <div class=work-info>
                                             <p>Landing Page Concept for Design Studio<div class=work-links><a
-                                                        href="images/portfolio/UI/Architect/Home.png"
+                                                        href=images/portfolio/UI/Architect/Home.png
                                                         class="image-link lightbox"><i class=icon data-icon=W></i></a>
                                                 </div>
                                         </div>
                                     </div>
-                                </div><img class="thumbnail" src="images/portfolio/UI/Architect/arc.gif"
-                                    alt="">
+                                </div><img src=images/portfolio/UI/Architect/arc.gif alt="" class=thumbnail>
                             </div>
                         </div>
-
                         <div class="col-md-4 col-sm-6 fadeInUp link single_item wow application" data-wow-delay=0.3s>
+                            <div class="work-inner">
+                                <div class="work-overlay">
+                                    <div class="overlay-in">
+                                        <div class="work-info">
+                                            <p>UI Redesign - SBI</p>
+                                            <div class="work-links">
+                                                <a href="images/portfolio/UI/SBI.png"
+                                                    class="image-link lightbox"><i data-icon="W" class="icon"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><img class="thumbnail" src="images/portfolio/UI/SBI.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 fadeInUp link single_item wow graphics roundDiv"
+                            data-wow-delay=0.4s>
                             <div class=work-inner>
                                 <div class=work-overlay>
                                     <div class=overlay-in>
                                         <div class=work-info>
-                                            <p>Travello-iPad<div class=work-links><a
-                                                        href="images/portfolio/UI/Travello1.png"
+                                            <p>Logo Design - Rangoli<div class=work-links><a
+                                                        href=images/portfolio/LOGO/Rangoli.png
                                                         class="image-link lightbox"><i class=icon data-icon=W></i></a>
                                                 </div>
                                         </div>
                                     </div>
-                                </div><img class="thumbnail" src=images/portfolio/UI/Travello.jpg alt="">
+                                </div><img src=images/portfolio/LOGO/Rangoli.webp alt="" class=thumbnail>
                             </div>
                         </div>
-                        <div class="single_item link graphics col-md-4 col-sm-6 wow fadeInUp roundDiv"
-                            data-wow-delay="0.4s">
-                            <div class="work-inner">
-                                <div class="work-overlay">
-                                    <div class="overlay-in">
-                                        <div class="work-info">
-                                            <p>Logo Design - Rangoli</p>
-                                            <div class="work-links">
-                                                <!--a href="work-single.html" class="link"><i
-                                                data-icon="5" class="icon"></i></a--><a
-                                                    href="images/portfolio/LOGO/Rangoli.png"
-                                                    class="image-link lightbox"><i data-icon="W" class="icon"></i></a>
-                                            </div>
+                        <div class="col-md-4 col-sm-6 fadeInUp link single_item wow graphics roundDiv"
+                            data-wow-delay=0.4s>
+                            <div class=work-inner>
+                                <div class=work-overlay>
+                                    <div class=overlay-in>
+                                        <div class=work-info>
+                                            <p>Logo Design - Pubnote<div class=work-links><a
+                                                        href=images/portfolio/LOGO/Pubnote.png
+                                                        class="image-link lightbox"><i class=icon data-icon=W></i></a>
+                                                </div>
                                         </div>
                                     </div>
-                                </div><img class="thumbnail" src="images/portfolio/LOGO/Rangoli.webp" alt="">
+                                </div><img src=images/portfolio/LOGO/Pubnote.webp alt="" class=thumbnail>
                             </div>
                         </div>
-                        <div class="single_item link graphics col-md-4 col-sm-6 wow fadeInUp roundDiv"
-                            data-wow-delay="0.4s">
-                            <div class="work-inner">
-                                <div class="work-overlay">
-                                    <div class="overlay-in">
-                                        <div class="work-info">
-                                            <p>Logo Design - Pubnote</p>
-                                            <div class="work-links">
-                                                <!--a href="work-single.html" class="link"><i
-                                                data-icon="5" class="icon"></i></a--><a
-                                                    href="images/portfolio/LOGO/Pubnote.png"
-                                                    class="image-link lightbox"><i data-icon="W" class="icon"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><img class="thumbnail" src="images/portfolio/LOGO/Pubnote.webp" alt="">
-                            </div>
-                        </div>
-
                     </div>
                 </div>
-                <div class=portfolio-btn><a href=portfolio.html class="top_30 giggs_button">LOAD MORE <i class="icon btnicon" data-icon=g></i> </a></div>
+                <div class=portfolio-btn><a href=portfolio.html class="top_30 giggs_button">LOAD MORE <i
+                            class="icon btnicon" data-icon=g></i></a></div>
             </div>
         </div>
     </section>
-    <section class="fadeInUp wow contact" id=contact data-wow-delay=0.6s>
+    <section class="contact fadeInUp wow" id=contact data-wow-delay=0.6s>
         <div class=container>
             <div class=row>
                 <div class=center-title>
@@ -346,22 +327,19 @@
                 </div>
                 <div class=col-md-12>
                     <div class=row>
-                        <form action='/pages/success.html' method='POST' name='contact' onSubmit='submit'
-                            class="col-md-8 col-md-offset-2 contact-form top_60 roundDiv" netlify-honeypot="bot-field" data-netlify="true">
-                            <input style="visibility: hidden;height: 0px;" name="bot-field">
+                        <form action=/pages/success.html class="roundDiv col-md-8 col-md-offset-2 contact-form top_60"
+                            data-netlify=true method=POST name=contact netlify-honeypot=bot-field onsubmit=submit><input
+                                name=bot-field style=visibility:hidden;height:0>
                             <div class=row>
-                                <div class=col-md-6><input name="name" id="name" type="text" class="form-input"
-                                        placeholder="Your name..." required="required"></div>
-                                <div class="col-md-6 roundDiv"><input name="email" id="email" type="email"
-                                        class="form-input" placeholder="Your email..." required="required">
-                                </div>
-                                <div class="col-md-12 roundDiv">
-                                    <textarea class="requie form-text" id=con_message name="message"
-                                        placeholder="Enter your message..." rows=8></textarea></div>
-                                <input class=giggs_button2 type="submit" id="submit" name="send" value="SEND A MESSAGE">
+                                <div class=col-md-6><input name=name class=form-input id=name placeholder="Your name..."
+                                        required></div>
+                                <div class="roundDiv col-md-6"><input name=email class=form-input id=email
+                                        placeholder="Your email..." required type=email></div>
+                                <div class="roundDiv col-md-12"><textarea class="form-text requie" id=con_message
+                                        name=message placeholder="Enter your message..." rows=8></textarea></div><input
+                                    name=send class=giggs_button2 id=submit type=submit value="SEND A MESSAGE">
                             </div>
                         </form>
-
                     </div>
                 </div>
             </div>
@@ -369,10 +347,9 @@
     </section>
     <footer>
         <div class="container text-center">
-            <div class=social><a target="_blank" href=https://github.com/yoursamlan> <i class="fa fa-github" aria-hidden=true></i>
-                </a>
-                <a target="_blank" href=https://codepen.io/amlan99> <i class="fa fa-codepen" aria-hidden=true></i></a>
-            </div>
+            <div class=social><a href=https://github.com/yoursamlan target=_blank><i class="fa fa-github"
+                        aria-hidden=true></i> </a><a href=https://codepen.io/amlan99 target=_blank><i
+                        class="fa fa-codepen" aria-hidden=true></i></a></div>
             <div class=copyright-text>
                 <hr>
                 <p>© 2022 Amlan Saha Kundu, All rights Reserved.
@@ -383,4 +360,3 @@
         </script> <script src=js/isotope.pkgd.min.js> </script> <script src=js/owl.carousel.min.js> </script> <script
         src=js/jquery.magnific-popup.min.js> </script> <script src=js/jquery.mousewheel.js> </script> <script
         src=js/perfect-scrollbar.js> </script> <script src=js/wow.js> </script> <script src=js/main.js> </script>
-        </html>
