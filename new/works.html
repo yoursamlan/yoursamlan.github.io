@@ -20,6 +20,17 @@
     <link href="css/colors/switcher.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/font.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <script>
+        function randInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min)
+        }
+        var x = randInt(1, 5);
+        var colorPalet = ['#3957b7', '#73c2ff', '#ed2e38', '#46995B', '#EBA937', '#C8A2C8','#967bb6']
+        var p = 'url("./../images/bg/bg' + x + '.svg")';
+        var r = document.querySelector(':root');
+        r.style.setProperty('--bgX', p);
+        r.style.setProperty('--accCol', colorPalet[x]);
+    </script>
     <link rel="stylesheet" href="icon-fonts/font-awesome-4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="icon-fonts/essential-regular-fonts/essential-icons.css">
     <link href='https://fonts.googleapis.com/css?family=Libre Baskerville' rel='stylesheet'>
@@ -41,7 +52,7 @@
                     <div class="logo"><img src="./images/logo.png" id="logoimg"> Amlan</div>
                 </div>
                 <div class="col-md-9">
-                    <div class="responsive" id="mobNav">MENU</div>
+                    <div class="responsive" id="mobNav">☰</div>
                     <nav>
                         <ul class="nav-menu nav-scroll">
                             <li><a href="./index.html#home">HOME</a></li>
@@ -57,7 +68,7 @@
     </header>
 
     <!--Cover Image-->
-    <section class="page-cover">
+    <section class="page-cover" id="Pcover">
         <div class="container">
             <div class="center-title">
                 <h1>MY PORTFOLIO</h1>
@@ -70,36 +81,38 @@
 
 
 
-            <div class="portfolio_filter">
+            <div class="portfolio_filter" id="portfil">
                 <ul>
                     <li class="select-cat" data-filter="*">All</li>
-                    <li data-filter=".webdesign">Web Design</li>
-                    <li data-filter=".graphics">Graphics</li>
-                    <li data-filter=".application">App UI/UX</li>
+                    <li data-filter=".logoD">Logo</li>
+                    <li data-filter=".appui">UI/UX</li>
+                    <!--li data-filter=".webdev">Web Dev</li-->
+                    <li data-filter=".misc">Miscellaneous</li>
                 </ul>
             </div>
 
             <div class="col-md-12 col-sm-12 col-xs-12 top_30">
                 <div class="isotope_items row">
 
-                    <div class="single_item link application col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+
+                    <div class="single_item link appui col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="work-inner">
                             <div class="work-overlay">
                                 <div class="overlay-in">
                                     <div class="work-info">
-                                        <p>Puja Parikrama 2022 - Onboarding</p>
+                                        <p>App Concept - Sunday Suspense</p>
                                         <div class="work-links">
                                             <!--a href="work-single.html" class="link"><i
                                                     data-icon="5" class="icon"></i></a--><a
-                                                href="images/portfolio/UI/Puja Parikrama Landing - Amlan Saha Kundu-Amlan.png"
+                                                href="images/portfolio/UI/sunsus.gif"
                                                 class="image-link lightbox"><i data-icon="W" class="icon"></i></a>
                                         </div>
                                     </div>
                                 </div>
-                            </div><img class="thumbnail" src="images/portfolio/UI/PP.gif" alt="">
+                            </div><img class="thumbnail" src="images/portfolio/UI/sunsus.gif" alt="">
                         </div>
                     </div>
-                    <div class="single_item link graphics col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="single_item link logoD col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="work-inner">
                             <div class="work-overlay">
                                 <div class="overlay-in">
@@ -116,7 +129,7 @@
                             </div><img class="thumbnail" src="images/portfolio/LOGO/Logo-Amlan-Classic.webp" alt="">
                         </div>
                     </div>
-                    <div href="images/work-3.jpg" class="single_item link application col-md-4 col-sm-6 wow fadeInUp"
+                    <div class="single_item link misc col-md-4 col-sm-6 wow fadeInUp"
                         data-wow-delay="0.2s">
                         <div class="work-inner">
                             <div class="work-overlay">
@@ -134,26 +147,24 @@
                             </div><img class="thumbnail" src="images/portfolio/UI/LSR.jpg" alt="">
                         </div>
                     </div>
-                    <div href="images/work-4.jpg" class="single_item link webdesign col-md-8 col-sm-6 wow fadeInUp"
+                    <div class="single_item link appui col-md-8 col-sm-6 wow fadeInUp"
                         data-wow-delay="0.2s">
-                        <div class="work-inner">
-                            <div class="work-overlay">
-                                <div class="overlay-in">
-                                    <div class="work-info">
-                                        <p>Minimal Landing Page for Design Studio</p>
-                                        <div class="work-links">
-                                            <!--a href="work-single.html" class="link"><i
-                                                    data-icon="5" class="icon"></i></a--><a
-                                                href="images/portfolio/UI/Minimal Landing - Amlan.png"
-                                                class="image-link lightbox"><i data-icon="W" class="icon"></i></a>
-                                        </div>
+                        <div class=work-inner>
+                            <div class=work-overlay>
+                                <div class=overlay-in>
+                                    <div class=work-info>
+                                        <p>Landing Page Concept for Design Studio<div class=work-links><a
+                                                    href="images/portfolio/UI/Architect/Home.png"
+                                                    class="image-link lightbox"><i class=icon data-icon=W></i></a>
+                                            </div>
                                     </div>
                                 </div>
-                            </div><img class="thumbnail" src="images/portfolio/UI/Minimal Landing - Amlan.jpg" alt="">
+                            </div><img class="thumbnail" src="images/portfolio/UI/Architect/arc.gif"
+                                alt="">
                         </div>
                     </div>
 
-                    <div class="single_item link graphics col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="single_item link logoD col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="work-inner">
                             <div class="work-overlay">
                                 <div class="overlay-in">
@@ -171,7 +182,7 @@
                         </div>
                     </div>
 
-                    <div class="single_item link graphics col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="single_item link logoD col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="work-inner">
                             <div class="work-overlay">
                                 <div class="overlay-in">
@@ -188,7 +199,8 @@
                             </div><img class="thumbnail" src="images/portfolio/LOGO/Rangoli.webp" alt="">
                         </div>
                     </div>
-                    <div class="single_item link graphics col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
+
+                    <div class="single_item link logoD col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="work-inner">
                             <div class="work-overlay">
                                 <div class="overlay-in">
@@ -206,7 +218,79 @@
                         </div>
                     </div>
 
-                    <div class="single_item link application col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="single_item link appui col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="work-inner">
+                            <div class="work-overlay">
+                                <div class="overlay-in">
+                                    <div class="work-info">
+                                        <p>Puja Parikrama 2022 - Onboarding</p>
+                                        <div class="work-links">
+                                           <a  href="images/portfolio/UI/Puja Parikrama Landing - Amlan Saha Kundu-Amlan.png"
+                                                class="image-link lightbox"><i data-icon="W" class="icon"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><img class="thumbnail" src="images/portfolio/UI/PP.gif" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="single_item link appui col-md-8 col-sm-6 wow fadeInUp"
+                    data-wow-delay="0.2s">
+                    <div class="work-inner">
+                        <div class="work-overlay">
+                            <div class="overlay-in">
+                                <div class="work-info">
+                                    <p>Minimal Landing Page for Design Studio</p>
+                                    <div class="work-links">
+                                        <!--a href="work-single.html" class="link"><i
+                                                data-icon="5" class="icon"></i></a--><a
+                                            href="images/portfolio/UI/Minimal Landing - Amlan.png"
+                                            class="image-link lightbox"><i data-icon="W" class="icon"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><img class="thumbnail" src="images/portfolio/UI/Minimal Landing - Amlan.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="single_item link appui col-md-8 col-sm-6 wow fadeInUp"
+                data-wow-delay="0.2s">
+                <div class="work-inner">
+                    <div class="work-overlay">
+                        <div class="overlay-in">
+                            <div class="work-info">
+                                <p>Travello for iPad</p>
+                                <div class="work-links">
+                                    <!--a href="work-single.html" class="link"><i
+                                            data-icon="5" class="icon"></i></a--><a
+                                        href="images/portfolio/UI/Travello.png"
+                                        class="image-link lightbox"><i data-icon="W" class="icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><img class="thumbnail" src="images/portfolio/UI/Travello1.png" alt="">
+                </div>
+            </div>
+            <div class="single_item link appui col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="work-inner">
+                    <div class="work-overlay">
+                        <div class="overlay-in">
+                            <div class="work-info">
+                                <p>UI Redesign - SBI</p>
+                                <div class="work-links">
+                                    <!--a href="work-single.html" class="link"><i
+                                            data-icon="5" class="icon"></i></a--><a
+                                        href="images/portfolio/UI/SBI.png"
+                                        class="image-link lightbox"><i data-icon="W" class="icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><img class="thumbnail" src="images/portfolio/UI/SBI.jpg" alt="">
+                </div>
+            </div>
+
+                    <div class="single_item link appui col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="work-inner">
                             <div class="work-overlay">
                                 <div class="overlay-in">
@@ -223,40 +307,6 @@
                             </div><img class="thumbnail" src="images/portfolio/UI/dr.jpg" alt="">
                         </div>
                     </div>
-                    <div href="images/work-4.jpg" class="single_item link application col-md-8 col-sm-6 wow fadeInUp"
-                        data-wow-delay="0.2s">
-                        <div class="work-inner">
-                            <div class="work-overlay">
-                                <div class="overlay-in">
-                                    <div class="work-info">
-                                        <p>Travello for iPad</p>
-                                        <div class="work-links">
-                                            <!--a href="work-single.html" class="link"><i
-                                                    data-icon="5" class="icon"></i></a--><a
-                                                href="images/portfolio/UI/Travello.png"
-                                                class="image-link lightbox"><i data-icon="W" class="icon"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><img class="thumbnail" src="images/portfolio/UI/Travello1.png" alt="">
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -273,33 +323,19 @@
     <!-- FOOTER -->
     <footer>
         <div class="container text-center">
-            <div class="social"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#"><i
-                        class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-instagram"
-                        aria-hidden="true"></i></a><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a><a
-                    href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></div>
-            <div class="copyright-text">
+            <div class=social><a target="_blank" href=https://github.com/yoursamlan> <i class="fa fa-github" aria-hidden=true></i>
+                </a>
+                <a target="_blank" href=https://codepen.io/amlan99> <i class="fa fa-codepen" aria-hidden=true></i></a>
+            </div>
+            <div class=copyright-text>
                 <hr>
-                <p>© 2022 Amlan Saha Kundu, All rights Reserved.</p>
+                <p>© 2022 Amlan Saha Kundu, All rights Reserved.
             </div>
         </div>
-    </footer>
-
-
-    <!-- Javascripts -->
-    <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/typed.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="twitter-api/tweetie.js"></script>
-    <script src="js/jquery.mousewheel.js"></script>
-    <script src="js/perfect-scrollbar.js"></script>
-    <script src="js/styleswitcher.js"></script>
-    <script src="js/wow.js"></script>
-    <script src="js/main.js"></script>
-</body>
-
-
-
-</html>
+    </footer><a href=#Pcover class=backtop><i class="fa fa-chevron-up" aria-hidden=true></i></a>
+    <script src=js/jquery-2.1.4.min.js> </script> <script src=js/bootstrap.min.js> </script> <script src=js/typed.js>
+        </script> <script src=js/isotope.pkgd.min.js> </script> <script src=js/owl.carousel.min.js> </script> <script
+        src=js/jquery.magnific-popup.min.js> </script> <script src=js/jquery.mousewheel.js> </script> <script
+        src=js/perfect-scrollbar.js> </script> <script src=js/wow.js> </script> <script src=js/main.js> </script>
+        </body>
+        </html>
