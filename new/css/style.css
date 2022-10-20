@@ -2221,7 +2221,9 @@ a.giggs_button2 {
     }
 
     p {
-        text-align: justify;
+        text-align:justify;
+        padding: 0 1em;
+
     }
 }
 
