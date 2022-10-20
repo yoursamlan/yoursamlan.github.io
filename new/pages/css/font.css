@@ -1,0 +1,31 @@
+@font-face {
+font-family: "Signeton";
+src: url("./../icon-fonts/signeton/Signeton.woff2");
+src: url("./../icon-fonts/signeton/Signeton.woff") format("woff"),
+url("./../icon-fonts/signeton/Signeton.otf") format("opentype"),
+}
+
+
+span>data-text2{
+    font-family: "Signeton" !important;
+}
+
+ .name{
+    font-family: "Signeton" !important;
+    color: var(--accCol);
+    font-weight: 600;
+ }
+
+.btnicon{
+    font-size: 16px !important;
+    padding-left: 8px;
+}
+ .arrow{
+    font-size: 20px;
+    padding-left: 16px;
+    font-family: sans-serif;
+ }
+
+ .feat2{
+    color: var(--accCol);
+ }
